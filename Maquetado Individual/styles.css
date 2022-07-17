@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    color: black;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    background-color:#ffffff;
+    width: 100%;
+    height: 70px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    background-color: #ffffff;
+    width: 30%;
+    height: 100%;
+    border-style: solid;
+    border-width: 0px 3px 0px 0px;
+    border-color: black;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    justify-content: center;
+    align-items: center;
+}
+
+#search {
+    background-color: #ffffff;
+    width: 50%;
+    height: 100%;
+    border: none;
+    font-size: 1.125rem;
+    padding-left: 50px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.opciones, .cuenta, .ubicacion, .compras {
+    background-color: #ffffff;
+    width: 5%;
+    height: 100%;
+    border-style: solid;
+    border-width: 0px 0px 0px 3px;
+    border-color: black;
+}
+
+
+main {
+    background-image: url("https://www.esenzzia.com/modules/ps_imageslider/images/f84a8567c559b194fc58867a27b495da22b8a449_Post%20de%20Instagram%20rebajas%20ofertas%20descuentos%20femenino%20rosa%20(1947%C2%A0%C3%97%C2%A0876%C2%A0px)%20(1).png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.rebajas {
+    width: 30%;
+    height: 60px;
+    background-color: black;
+    border-style: none;
+    color: #ffffff;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0px 0px 40px 30px;
+    transition: all .5s ease;
+}
+
+.rebajas:hover {
+    width: 30%;
+    height: 60px;
+    background-color: #ffffff;
+    border-style: none;
+    color: black;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.ayuda {
+    width: 110px;
+    height: 50px;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    font-size: 18px;
+    background-color: black;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #ffffff;
+    color: #ffffff;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+section {
+    background-color:#ffffff;
+    width: 100%;
+    height: 80vh;
+    border-style: solid;
+    border-width: 3px 0px 0px 0px;
+    border-color: black;
+}
+
+
