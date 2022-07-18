@@ -43,17 +43,39 @@ header {
 
 #search {
     background-color: #ffffff;
-    width: 51%;
+    width: 40%;
     height: 100%;
-    border: none;
+    border: 0;
     font-size: 1.125rem;
     padding-left: 50px;
     font-family: 'Roboto';
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.125rem;
     justify-content: center;
     align-items: center;
-    box-shadow: none;
+}
+
+input:focus {
+    outline: 0;
+}
+
+
+::placeholder {
+    color: #000;
+}
+
+.material-symbols-outlined {
+    display: flex !important;
+    font-size: 30px !important;
+    align-items: center;
+    justify-content: flex-start;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 48;
+    width: 11%;
+    height: 100%;
 }
 
 .opciones, .cuenta, .ubicacion, .compras {
@@ -68,9 +90,11 @@ header {
     border-width: 0px 0px 0px 3px;
     border-color: black;
     fill: #000;
+    transition-delay: 0s;
+    transition: all .5s ease;
 }
 
-.opciones:hover, .cuenta:hover, .ubicacion:hover, .compras:hover {
+.opciones:hover, .cuenta:hover, .ubicacion:hover {
     display: flex;
     cursor: pointer;
     align-items: center;
@@ -85,14 +109,6 @@ header {
     fill: rgb(255, 255, 255);
 }
 
-.material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 1,
-    'wght' 300,
-    'GRAD' 0,
-    'opsz' 48
-}
-
 #imagen-principal{
     background-image: url("https://www.esenzzia.com/modules/ps_imageslider/images/f84a8567c559b194fc58867a27b495da22b8a449_Post%20de%20Instagram%20rebajas%20ofertas%20descuentos%20femenino%20rosa%20(1947%C2%A0%C3%97%C2%A0876%C2%A0px)%20(1).png");
     background-position: center;
@@ -103,7 +119,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    
 }
 
 .rebajas {
@@ -141,7 +156,6 @@ header {
     border-color: black;
     border-style: solid;
     border-width: 3px;
-
     font-family: 'Roboto';
     font-weight: 700;
     text-transform: uppercase;
@@ -149,10 +163,14 @@ header {
 }
 
 .ayuda {
-    width: 110px;
-    height: 50px;
     position: fixed;
-    bottom: 100px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 125px;
+    height: 3.125rem;
+    bottom: 90px;
     right: 50px;
     font-size: 18px;
     background-color: black;
@@ -163,6 +181,52 @@ header {
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
+    transition-delay: 0s;
+    transition: all .5s ease;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.ayuda p {
+    font-family: 'Roboto';
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+
+}
+
+.ayuda:hover {
+    position: fixed;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 125px;
+    height: 3.125rem;
+    bottom: 90px;
+    right: 50px;
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #000000;
+    color: #000000;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.material-symbols-outlined:nth-child(1) {
+    font-size: 25px !important;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 48
 }
 
 .abajo-imagen {
@@ -187,4 +251,3 @@ header {
     color: #000;
     text-align: left;
 }
-
